@@ -1,0 +1,15 @@
+diff --git a/03-self-healing-architectures/starter/infra/eks.tf b/03-self-healing-architectures/starter/infra/eks.tf
+index 2954b7e..19a4c35 100755
+--- a/03-self-healing-architectures/starter/infra/eks.tf
++++ b/03-self-healing-architectures/starter/infra/eks.tf
+@@ -19,8 +19,8 @@ module "project_eks" {
+   account            = data.aws_caller_identity.current.account_id
+   private_subnet_ids = module.vpc.private_subnet_ids
+   vpc_id             = module.vpc.vpc_id
+-  nodes_desired_size = 2
+-  nodes_max_size     = 2
++  nodes_desired_size = 4
++  nodes_max_size     = 4
+   nodes_min_size     = 1
+ 
+   depends_on = [

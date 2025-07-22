@@ -1,0 +1,62 @@
+--------------------------
+Request: 1
+<html>
+<h1>This is version 2</h1>
+</html>
+
+--------------------------
+Request: 2
+<html>
+<h1>This is version 1</h1>
+</html>
+
+--------------------------
+Request: 3
+<html>
+<h1>This is version 1</h1>
+</html>
+
+--------------------------
+Request: 4
+<html>
+<h1>This is version 2</h1>
+</html>
+
+--------------------------
+Request: 5
+<html>
+<h1>This is version 2</h1>
+</html>
+
+--------------------------
+Request: 6
+<html>
+<h1>This is version 1</h1>
+</html>
+
+--------------------------
+Request: 7
+<html>
+<h1>This is version 2</h1>
+</html>
+
+--------------------------
+Request: 8
+<html>
+<h1>This is version 1</h1>
+</html>
+
+--------------------------
+Request: 9
+<html>
+<h1>This is version 1</h1>
+</html>
+
+--------------------------
+Request: 10
+<html>
+<h1>This is version 1</h1>
+</html>
+
+Curl attempts finished.
+pod "canary-debug-curl" deleted
