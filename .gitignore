@@ -32,3 +32,6 @@
 # personal files
 __*
 deliverables/
+
+# Ignore personal solution files
+*_jgorostegui*
