@@ -1,0 +1,8 @@
+# API Service
+
+| Category     | SLI                                                                                                                                                              | SLO                                                                                                         |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Availability | Successful request ratio: percentage of HTTP responses with status < 500 divided by total HTTP requests, evaluated over a 1-minute rolling window (availability = good / total). | 99%                                                                                                         |
+| Latency      | Request latency (P90): 90th-percentile value of http_request_duration_seconds (or equivalent) over a 5-minute window, converted to milliseconds.                   | 90% of requests below 100ms                                                                                 |
+| Error Budget | Error rate: proportion of requests returning status ≥ 500 (or timing out) over total requests in the measurement window. Remaining error budget = 1 − cumulative error rate. | Error budget is defined at 20%. This means that 20% of the requests can fail and still be within the budget |
+| Throughput   | Requests per second: average successful requests per second over the last minute.                                  | 5 RPS indicates the application is functioning                                                              |
